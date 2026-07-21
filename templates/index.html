@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>TaskFlow</h1>
+
+        <p>Organize your daily tasks, stay productive and keep everything in one place</p>
+
+        <a href="{{ url_for('login') }}">
+            <button>Get Started</button>
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}
