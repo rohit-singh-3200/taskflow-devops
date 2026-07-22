@@ -97,9 +97,11 @@ def register():
                 flash("Registration successful!", "success")
                 return redirect(url_for("login"))
             
-            except Exception as e:
-                print(e)
-                flash("Registration failed.","error")
+            except Exception:
+                import traceback
+                traceback.print_exc()
+                raise
+
             
             finally:
                 if cursor:
@@ -235,4 +237,4 @@ def logout():
     return redirect(url_for("home"))
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
