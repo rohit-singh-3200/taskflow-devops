@@ -11,6 +11,7 @@ A production-ready Flask task management application built to demonstrate modern
 - MySQL Database
 - Environment Variables
 - Responsive UI
+- CI/CD Workflow
 
 ## Tech Stack
 
