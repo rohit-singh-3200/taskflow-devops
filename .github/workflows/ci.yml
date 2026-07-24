@@ -50,7 +50,7 @@ jobs:
             username: ${{ secrets.EC2_USER }}
             key: ${{ secrets.EC2_SSH_KEY }}
             script: |
-              cd ~/taskflow
+              cd ~/taskflow-devops
               docker compose pull
               docker compose up -d
 
