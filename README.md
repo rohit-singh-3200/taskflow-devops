@@ -13,6 +13,7 @@ A production-ready Flask task management application built to demonstrate modern
 - Responsive UI
 - CI/CD Workflow
 
+
 ## Tech Stack
 
 - Python
